@@ -1,0 +1,1 @@
+$data modify storage test:test calc set value "$(concat)$(calc)"

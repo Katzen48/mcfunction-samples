@@ -1,0 +1,18 @@
+$scoreboard players set @p calc2 $(calc)
+
+execute if score @p calc2 matches 0 run data modify storage test:test concat set value "0"
+execute if score @p calc2 matches 1 run data modify storage test:test concat set value "1"
+execute if score @p calc2 matches 10 run data modify storage test:test concat set value "2"
+execute if score @p calc2 matches 11 run data modify storage test:test concat set value "3"
+execute if score @p calc2 matches 100 run data modify storage test:test concat set value "4"
+execute if score @p calc2 matches 101 run data modify storage test:test concat set value "5"
+execute if score @p calc2 matches 110 run data modify storage test:test concat set value "6"
+execute if score @p calc2 matches 111 run data modify storage test:test concat set value "7"
+execute if score @p calc2 matches 1000 run data modify storage test:test concat set value "8"
+execute if score @p calc2 matches 1001 run data modify storage test:test concat set value "9"
+execute if score @p calc2 matches 1010 run data modify storage test:test concat set value "a"
+execute if score @p calc2 matches 1011 run data modify storage test:test concat set value "b"
+execute if score @p calc2 matches 1100 run data modify storage test:test concat set value "c"
+execute if score @p calc2 matches 1101 run data modify storage test:test concat set value "d"
+execute if score @p calc2 matches 1110 run data modify storage test:test concat set value "e"
+execute if score @p calc2 matches 1111 run data modify storage test:test concat set value "f"
