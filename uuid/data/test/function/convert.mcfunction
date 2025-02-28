@@ -2,9 +2,9 @@ scoreboard players set @p complement 0
 $execute if score @p $(part) matches ..-1 run scoreboard players set @p complement 1
 $execute if score @p $(part) matches ..-1 run scoreboard players operation @p $(part) *= #-1 Modulo
 
-$scoreboard players operation #2 complement = @s $(part)
+$scoreboard players operation #2 complement = @p $(part)
 scoreboard players operation #2 complement %= #2 Modulo
-$execute if score #2 complement matches 0 if score @s complement matches 1 run scoreboard players operation @s $(part) -= #2 Modulo
+$execute if score #2 complement matches 0 if score @p complement matches 1 run scoreboard players operation @p $(part) -= #2 Modulo
 
 $execute store result score @p calc run scoreboard players get @p $(part)
 $scoreboard players operation @p $(part) /= #2 Modulo
